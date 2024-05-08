@@ -1,0 +1,38 @@
+.foundation-main {
+    height: 116px;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-img {
+    width: 15%;
+    height: 100%;
+    margin-left: 2%;
+    margin-top: 2.2%;
+}
+
+#search-bar {
+    width: 40%;
+    height: 35%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#bell-img, #profile-img {
+    margin-top: 2%;
+    width: 60px;
+    height: 60px;
+}
+
+#bell-img {
+    margin-left: 150px
+}
+
+#homeowner-info {
+    margin-top: 2.5%;
+}
+
+#title {
+    margin-left: 40%;
+}

@@ -1,0 +1,9 @@
+<app-foundation [currentUser]="currentUser" [title]="'Building selection'"></app-foundation>
+<div class="buiding-selection-panel">
+    <div class="building-field" *ngFor="let building of currentUser?.buidings" (click)="selectBuilding(building)">
+        <img src="../../assets/building.png" alt="building.pnh" width="80px" height="80px">
+        <p>Бл. {{building.buildingNumber}} Вх. {{building.buildingSubnumber}}</p>
+        <p>{{building.district}}, {{building.city}}</p>
+        <p>{{building.safe.debit}} лв.</p>
+    </div>
+</div>
