@@ -1,0 +1,38 @@
+.top-panel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+}
+
+.activities-panel, .notifications-panel, .cashier-panel {
+  width: 20%;
+  height: 300px;
+  margin-top: 25px;
+  margin-left: 10%;
+  border-radius: 15%;
+  border:2px solid black;
+  text-align: center;
+}
+
+.additional-info-panel {
+  width: 80%;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 10%;
+  border-radius: 3%;
+  border:2px solid black;
+  text-align: center;
+}
+
+#finished, #active-notification {
+  color: limegreen;
+}
+
+#active, #archived {
+  color: yellowgreen;
+}
+
+#aborted, #expired  {
+  color: red;
+}

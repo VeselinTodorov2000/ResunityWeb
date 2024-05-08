@@ -25,3 +25,19 @@ E
 +src/app/foundation/foundation.component.css,9\1\9153819672574f15c290481dfd731136249c591d
 i
 9src/app/buildingselection/buildingselection.component.css,1\e\1ebcaf5ab535f9ddd157d374d0981e3d26b10e1d
+F
+src/app/models/safe.ts,6\f\6fb17b1e77e98bb8b6447edf52b065c69f3594bf
+K
+src/app/models/homeowner.ts,6\d\6dfbcbbf7c939fc368fef533afb7efd9a25a60ff
+J
+src/app/models/activity.ts,6\f\6f7ca941c3784f844deb58ed7ff0249ba7216d98
+O
+src/app/models/activity-type.ts,f\a\fa9f0da361e42af4817ea117c47ba8db22fae603
+N
+src/app/models/notification.ts,e\5\e5273a7f5a92e9f965f9e40cc87d508ed612539b
+S
+#src/app/models/notification-type.ts,e\e\ee1e07f4698c376e3e167b327af8c093022a0521
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e

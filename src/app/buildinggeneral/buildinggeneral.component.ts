@@ -1,7 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Homeowner } from '../models/homeowner';
 import { Building } from '../models/building';
 import { ActivatedRoute } from '@angular/router';
+import { ActivityType } from '../models/activity-type';
+import { Activity } from '../models/activity';
+import { NotificationType } from '../models/notification-type';
+import { Notification } from '../models/notification';
 
 @Component({
   selector: 'app-buildinggeneral',
@@ -13,46 +17,7 @@ export class BuildinggeneralComponent implements OnInit {
     homeownerName: 'Dimitar Dimitrov',
     howeownerCompany: 'Arteks',
     profileIcon: 'assets/profile-icon.jpg',
-    buidings: [
-      {
-        id: 1,
-        buildingNumber: '21',
-        buildingSubnumber: 'A',
-        district: 'Студентски град',
-        city: 'София',
-        safe: {
-          debit: 2000.00
-        }
-      },
-      {
-        id: 2,
-        buildingNumber: '50',
-        buildingSubnumber: 'В',
-        district: 'Малинова Долина',
-        city: 'София',
-        safe: {
-          debit: 1120.00
-        }
-      },
-      {
-        id: 3,
-        buildingNumber: '38',
-        district: 'Тракия',
-        city: 'Пловдив',
-        safe: {
-          debit: 500.00
-        }
-      },
-      {
-        id: 4,
-        buildingNumber: '250',
-        district: 'Сторгозия',
-        city: 'Плевен',
-        safe: {
-          debit: 1200.00
-        }
-      },
-    ]
+    buidings: []
   };
 
   public selection!: Building;
@@ -67,4 +32,25 @@ export class BuildinggeneralComponent implements OnInit {
     });
   }
 
+  public getContractExpiryDate(): string {
+    let date = new Date(this.selection.contactValidUntil);
+    return date.getMonth() + "/" + date.getFullYear();
+  }
+
+  public getNumberOfActivitiesByType(type: ActivityType): number {
+    return this.selection.activities
+      .map((activity: Activity) => activity.type)
+      .filter((activityType: ActivityType) => activityType === type)
+      .length;
+  }
+
+  public getNumberOfNotificationsByType(type: NotificationType): number {
+    return this.selection.notifications
+      .map((notification: Notification) => notification.type)
+      .filter((notificationType: NotificationType) => notificationType === type)
+      .length;
+  }
+
+  protected readonly ActivityType = ActivityType;
+  protected readonly NotificationType = NotificationType;
 }
