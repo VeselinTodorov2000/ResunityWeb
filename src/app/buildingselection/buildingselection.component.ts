@@ -27,7 +27,8 @@ export class BuildingselectionComponent implements OnInit {
             numberOfApartments: 32,
             safe: {
               debit: 2000.00,
-              cashierName: "Иван Иванов"
+              cashierName: "Иван Иванов",
+              iban: ""
             },
             activities: [],
             notifications: [],
@@ -47,6 +48,7 @@ export class BuildingselectionComponent implements OnInit {
             safe: {
               debit: 1120.00,
               cashierName: "Христо Христов",
+              iban: "BG10 0000 0000 0000",
             },
             activities: [
               {
@@ -89,7 +91,8 @@ export class BuildingselectionComponent implements OnInit {
             numberOfApartments: 20,
             safe: {
               debit: 500.00,
-              cashierName: "Ivan"
+              cashierName: "Ivan",
+              iban: "BG10 0000 0000 0000",
             },
             activities: [],
             notifications: [],
@@ -104,6 +107,7 @@ export class BuildingselectionComponent implements OnInit {
             safe: {
               debit: 1200.00,
               cashierName: "Лъчезар Иванов",
+              iban: "BG10 0000 0000 0000",
             },
             activities: [],
             notifications: [],

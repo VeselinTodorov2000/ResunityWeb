@@ -1,0 +1,64 @@
+.panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 90%;
+}
+
+.center-panel {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 90%;
+}
+
+.right-panel {
+  width: 30%;
+  height: 90%;
+}
+
+.information-panel {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.statements-panel {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.debit-panel {
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#debit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.debtors-panel {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.transactions-panel {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+

@@ -47,3 +47,9 @@ a
 0src/app/notifications/notifications.component.ts,e\0\e0efc4dce084f2fefcd7b9221b71943eb3f3e173
 b
 2src/app/notifications/notifications.component.html,5\2\52370a59667d7211e5d975c6f3552ac2f61f1a21
+V
+&src/app/cashier/cashier.component.html,0\6\06d1a2afadcb1af0487f098296d7a20aad71c2ae
+T
+$src/app/cashier/cashier.component.ts,d\f\df3c8636075d3a97142fefc981596d51e5cd4d68
+U
+%src/app/cashier/cashier.component.css,6\4\64f96bac70cea6bcd9d8a89007cb5f87d15256f7

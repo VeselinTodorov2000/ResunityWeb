@@ -1,1 +1,32 @@
-<p>cashier works!</p>
+<app-foundation [currentUser]="currentUser" [title]="selection.district + ' '
++ selection.buildingNumber + ', ' + selection.city"></app-foundation>
+<h1 style="display: flex; justify-content: center">Каса</h1>
+
+<div class="panels">
+  <div class="left-panel">
+    <div class="information-panel">
+      <h2>Информация</h2>
+    </div>
+    <div class="statements-panel">
+      <h2>Отчети</h2>
+    </div>
+  </div>
+  <div class="center-panel">
+    <div class="debit-panel">
+      <h2 style="display: flex; justify-content: center">Наличност</h2>
+      <div id="debit">
+        <img src="./assets/bank.png" alt="bank.png" width=100px height=100px>
+        <h2 style="margin-top: 7%">{{selection.safe.debit}} лв.</h2>
+      </div>
+      <h2 style="display: flex; justify-content: center">IBAN: {{selection.safe.iban}}</h2>
+    </div>
+    <div class="debtors-panel">
+      <h2>Длъжници</h2>
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="transactions-panel">
+      <h2>Трансакции</h2>
+    </div>
+  </div>
+</div>
