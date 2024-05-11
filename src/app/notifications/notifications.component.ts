@@ -44,4 +44,9 @@ export class NotificationsComponent implements OnInit {
   reopenNotification(notification: Notification) {
     notification.type = NotificationType.ACTIVE;
   }
+
+  getNotificationCreationDay(notification: Notification) {
+    let date = new Date(notification.creationDate);
+    return date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+  }
 }

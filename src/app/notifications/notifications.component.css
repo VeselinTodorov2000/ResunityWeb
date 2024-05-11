@@ -30,6 +30,11 @@
   margin-right: 1%;
 }
 
+.active-notification-panel-row > p, .expired-notification-panel-row > p {
+  font-size: 18px;
+  margin-left: 1%;
+}
+
 .button-bar-panel {
   margin-top: 1%;
   margin-right: 1%;

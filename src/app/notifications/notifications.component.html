@@ -13,6 +13,7 @@
 <div class="expired-notification-panel">
   <div class="expired-notification-panel-row" *ngFor="let notification of getNotificationsByType(NotificationType.EXPIRED)">
     <p>{{notification.name}}</p>
+    <p>{{getNotificationCreationDay(notification)}}</p>
     <button (click)="reopenNotification(notification)">Поднови</button>
   </div>
 </div>
