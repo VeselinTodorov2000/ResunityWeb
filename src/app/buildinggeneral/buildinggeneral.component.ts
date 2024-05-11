@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Homeowner } from '../models/homeowner';
 import { Building } from '../models/building';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ActivityType } from '../models/activity-type';
 import { Activity } from '../models/activity';
 import { NotificationType } from '../models/notification-type';
@@ -22,7 +22,7 @@ export class BuildinggeneralComponent implements OnInit {
 
   public selection!: Building;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -53,4 +53,16 @@ export class BuildinggeneralComponent implements OnInit {
 
   protected readonly ActivityType = ActivityType;
   protected readonly NotificationType = NotificationType;
+
+  openActivitiesForBuilding(selection: Building) {
+    this.router.navigate(['/activities'], {queryParams: {selection: JSON.stringify(selection)}});
+  }
+
+  openNotificationsForBuilding(selection: Building) {
+    this.router.navigate(['/notifications'], {queryParams: {selection: JSON.stringify(selection)}});
+  }
+
+  openCashierForBuilding(selection: Building) {
+    this.router.navigate(['/cashier'], {queryParams: {selection: JSON.stringify(selection)}});
+  }
 }

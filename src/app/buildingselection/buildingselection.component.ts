@@ -65,15 +65,18 @@ export class BuildingselectionComponent implements OnInit {
             notifications: [
               {
                 name: 'Not1',
-                type: NotificationType.ACTIVE
+                type: NotificationType.ACTIVE,
+                creationDate: new Date(2024, 9, 1)
               },
               {
                 name: 'Not2',
-                type: NotificationType.EXPIRED
+                type: NotificationType.EXPIRED,
+                creationDate: new Date(2024, 2, 15)
               },
               {
                 name: 'Not3',
-                type: NotificationType.ARCHIVED
+                type: NotificationType.ACTIVE,
+                creationDate: new Date(2023, 12, 30)
               }
             ],
           },

@@ -3,24 +3,25 @@
 
 <div class="main-screen">
   <div class="top-panel">
-    <div class="activities-panel">
+    <div class="activities-panel" (click)="openActivitiesForBuilding(selection)">
       <h2>Дейности</h2> <br>
 
       <h3 id="finished">{{getNumberOfActivitiesByType(ActivityType.FINISHED)}} Завършени</h3>
       <h3 id="active">{{getNumberOfActivitiesByType(ActivityType.ACTIVE)}} Активни</h3>
       <h3 id="aborted">{{getNumberOfActivitiesByType(ActivityType.ABORTED)}} Прекратени</h3>
     </div>
-    <div class="notifications-panel">
+    <div class="notifications-panel" (click)="openNotificationsForBuilding(selection)">
       <h2>Обявления</h2> <br>
 
       <h3 id="active-notification">{{getNumberOfNotificationsByType(NotificationType.ACTIVE)}} Активни</h3>
       <h3 id="expired">{{getNumberOfNotificationsByType(NotificationType.EXPIRED)}} Изтекли</h3>
       <h3 id="archived">{{getNumberOfNotificationsByType(NotificationType.ARCHIVED)}} Архивирани</h3>
     </div>
-    <div class="cashier-panel">
+    <div class="cashier-panel" (click)="openCashierForBuilding(selection)">
       <h2>Каса</h2> <br>
 
       <h4>Касиер: {{selection.safe.cashierName}}</h4>
+      <h4>Месечни такси: {{selection.numberOfApartments * 8.50}} лв.</h4>
     </div>
   </div>
   <div class="additional-info-panel">
