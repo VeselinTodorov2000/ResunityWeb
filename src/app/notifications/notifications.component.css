@@ -1,0 +1,46 @@
+.active-notification-panel, .expired-notification-panel {
+  width: 100%;
+  height: 30%;
+  border: 2px black solid;
+}
+
+.active-notification-panel-row, .expired-notification-panel-row {
+  margin: 1%;
+  width: 98%;
+  height: 10%;
+  border: 2px black solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.active-notification-panel-row > button {
+  background-color: #FF0000;
+  font-size: 22px;
+  margin-top: 10px;
+  height: 90%;
+  margin-right: 1%;
+}
+
+.expired-notification-panel-row > button {
+  background-color: #1AB717;
+  font-size: 22px;
+  margin-top: 10px;
+  height: 90%;
+  margin-right: 1%;
+}
+
+.button-bar-panel {
+  margin-top: 1%;
+  margin-right: 1%;
+  display: flex;
+  flex-direction: inherit;
+  justify-content: end;
+}
+
+.button-bar-panel > button {
+  background-color: #1C3099;
+  color: white;
+  font-size: 22px;
+  height: 50px;
+}

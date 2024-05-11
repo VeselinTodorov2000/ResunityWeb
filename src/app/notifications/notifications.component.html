@@ -1,1 +1,21 @@
-<p>notifications works!</p>
+<app-foundation [currentUser]="currentUser" [title]="selection.district + ' '
++ selection.buildingNumber + ', ' + selection.city"></app-foundation>
+
+<h2>Активни обяви</h2>
+<div class="active-notification-panel">
+  <div class="active-notification-panel-row" *ngFor="let notification of getNotificationsByType(NotificationType.ACTIVE)">
+    <p>{{notification.name}}</p>
+    <button (click)="expireNotification(notification)">Изтекла</button>
+  </div>
+</div>
+
+<h2>Изтекли обяви</h2>
+<div class="expired-notification-panel">
+  <div class="expired-notification-panel-row" *ngFor="let notification of getNotificationsByType(NotificationType.EXPIRED)">
+    <p>{{notification.name}}</p>
+    <button (click)="reopenNotification(notification)">Поднови</button>
+  </div>
+</div>
+<div class="button-bar-panel">
+  <button>Създай ново обявление</button>
+</div>

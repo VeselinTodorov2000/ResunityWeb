@@ -41,3 +41,9 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+a
+1src/app/notifications/notifications.component.css,2\6\269c1d662189c1f875f86704fe57f416f4e80eec
+`
+0src/app/notifications/notifications.component.ts,e\0\e0efc4dce084f2fefcd7b9221b71943eb3f3e173
+b
+2src/app/notifications/notifications.component.html,5\2\52370a59667d7211e5d975c6f3552ac2f61f1a21
