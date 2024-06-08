@@ -16,7 +16,7 @@ export class BuildingselectionComponent implements OnInit {
     homeownerName: 'Dimitar Dimitrov',
         howeownerCompany: 'Arteks',
         profileIcon: 'assets/profile-icon.jpg',
-        buidings: [
+        buildings: [
           {
             id: 1,
             buildingNumber: '21',

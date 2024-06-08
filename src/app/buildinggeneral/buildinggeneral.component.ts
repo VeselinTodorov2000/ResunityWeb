@@ -17,7 +17,7 @@ export class BuildinggeneralComponent implements OnInit {
     homeownerName: 'Dimitar Dimitrov',
     howeownerCompany: 'Arteks',
     profileIcon: 'assets/profile-icon.jpg',
-    buidings: []
+    buildings: []
   };
 
   public selection!: Building;

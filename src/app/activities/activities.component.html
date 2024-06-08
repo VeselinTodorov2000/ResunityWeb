@@ -1,1 +1,14 @@
-<p>activities works!</p>
+<app-foundation [currentUser]="currentUser" [title]="'Activities'"></app-foundation>
+<div class="activities-panel">
+    <h2>Активни дейности</h2>
+    <div class="ongoing-activities">
+        <div class="ongoing-activities-panel-row" *ngFor="let activity of getActivitiesByType(ActivityType.ACTIVE)">
+            <p>{{activity.name}}</p>
+            <button (click)="openActivity(activity)">Open</button>
+        </div>
+    </div>
+    <h2>Завършени дейности</h2>
+    <div class="finished-activities">
+
+    </div>
+</div>

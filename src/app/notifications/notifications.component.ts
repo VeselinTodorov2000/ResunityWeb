@@ -16,7 +16,7 @@ export class NotificationsComponent implements OnInit {
     homeownerName: 'Dimitar Dimitrov',
     howeownerCompany: 'Arteks',
     profileIcon: 'assets/profile-icon.jpg',
-    buidings: []
+    buildings: []
   };
 
   public selection!: Building;
